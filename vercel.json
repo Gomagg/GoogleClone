@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "search/wsgi.py",
+      "src": "clonedgoogle/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     },
@@ -21,7 +21,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "search/wsgi.py"
+      "dest": "clonedgoogle/wsgi.py"
     }
    ]
 }
